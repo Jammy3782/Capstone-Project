@@ -11,9 +11,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="icon" href="images/vegfavicon.ico">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slate-bootstrap.min.css">
     <!-- endbuild -->
-      <script src="//maps.google.com/maps/api/js"></script>
+    <!--  <script src="//maps.google.com/maps/api/js"></script> -->
   </head>
   <body ng-app="farmersmarketApp">
     <!--[if lte IE 8]>
@@ -21,7 +23,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <div class="header" style="border-bottom-width:0">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -33,7 +35,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">farmersmarket</a>
+            <a class="navbar-brand" href="#/">Local Farmers Market Locator</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
@@ -52,9 +54,15 @@
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
+    <div class="footer" style="border-top-width:0">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <h4>
+         <a name=myfooter></a>
+         Contact Me: &nbsp;
+         <a href=mailto:Jammy3782@gmail.com class="glyphicon glyphicon-envelope">
+             <span style=margin-left:2px>Jammy3782@gmail.com</span>
+         </a>
+     </h4>
       </div>
     </div>
 
@@ -84,6 +92,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9fApLUliVh0dk-NanvsNwfF3X2Qcqc8&libraries=places"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

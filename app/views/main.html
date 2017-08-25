@@ -1,14 +1,12 @@
 <h1>
   Farmers Market Locator
 </h1>
-    Zip: <input type="text" ng-model="zip" ng-change="update()"><br>
+<h4>Zip:</h4> <input type="text" ng-model="zip" ng-change="update()"><br>
 <br>
-    <br>
-    <h3>
-    Results:
-  </h3>
-  <ng-map center="[{{latitude}}, {{longitude}}]" >
-    <custom-marker ng-repeat="cm in customMarkers" position="[{{cm.latitude}}, {{cm.longitude}}]">
-          <img src="images/marketmarker.png"/>
-    </custom-marker>
-  </ng-map>
+<br>
+<h3>
+  Results:
+</h3>
+<ng-map zoom="11" center="[{{latitude}}, {{longitude}}]" zoom-to-include-markers="true">
+
+</ng-map>
